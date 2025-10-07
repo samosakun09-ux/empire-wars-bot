@@ -133,6 +133,7 @@ def run_flask():
     app.run(host='0.0.0.0', port=port)
 
 # -------------------- MAIN --------------------
+from webserver import keep_alive
 def main():
     TOKEN = os.environ.get("BOT_TOKEN")
     if not TOKEN:
